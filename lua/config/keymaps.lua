@@ -16,6 +16,6 @@ vim.api.nvim_create_user_command("RunFile", function()
   end
 end, {})
 
-vim.api.nvim_set_keymap("n", "<leader>p", ":RunFile<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>ce", ":RunFile<CR>", { noremap = true, silent = true })
 
--- vim.api.nvim_set_keymap("n", "<leader>p", [[:!python3 %<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>w", ":w<CR>", { noremap = true, silent = true })
