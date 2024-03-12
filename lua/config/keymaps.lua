@@ -11,6 +11,8 @@ vim.api.nvim_create_user_command("RunFile", function()
     vim.cmd("!python3 %")
   elseif vim.bo.filetype == "ruby" then
     vim.cmd("!ruby %")
+  elseif vim.bo.filetype == "javascript" then
+    vim.cmd("!node %")
   else
     print("File type not supported")
   end
