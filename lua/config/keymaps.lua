@@ -27,3 +27,6 @@ vim.keymap.set("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
   replace_keycodes = false,
 })
 vim.g.copilot_no_tab_map = true
+
+-- Search for word under cursor across the project
+vim.keymap.set("n", "<leader>f*", ":Telescope grep_string<CR>", { noremap = true, silent = true })
