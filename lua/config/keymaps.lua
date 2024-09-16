@@ -13,6 +13,8 @@ vim.api.nvim_create_user_command("RunFile", function()
     vim.cmd("!ruby %")
   elseif vim.bo.filetype == "javascript" then
     vim.cmd("!node %")
+  elseif vim.bo.filetype == "rust" then
+    vim.cmd("!cargo run --bin %:t:r")
   else
     print("File type not supported")
   end
